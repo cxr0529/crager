@@ -1,2 +1,2 @@
 # crager
-Coursera
+My personal repository for my work
