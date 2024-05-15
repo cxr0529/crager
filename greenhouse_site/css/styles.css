@@ -9,10 +9,6 @@ body {
 	padding-top: 60px;
 }
 
-h1{
-	text-align: center;
-}
-
 div{
 /*	border: 1px solid black;*/
 /*	background-color: black;*/
@@ -21,12 +17,19 @@ div{
 /*	margin-bottom: px;*/
 	position: relative;
 }
+
 footer{
 	text-align: center;
 	background-color: lightblue;
 }
 
 .row {width: 100%;}
+
+.sunshine{
+	text-align: center;
+	background-color: green;
+	color: yellow;
+}
 
 
 /***Desktop***/
