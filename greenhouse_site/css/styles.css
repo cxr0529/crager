@@ -21,16 +21,42 @@ div{
 footer{
 	text-align: center;
 	background-color: lightblue;
+	padding-top: 20px;
 }
 
 .row {width: 100%;}
 
-.sunshine{
+#sunshine{
 	text-align: center;
 	background-color: green;
 	color: yellow;
 }
+#history{
+	background-color: skyblue;
+	text-align: center;
+}
+#map{
 
+}
+#design{
+	background-color: green;
+	color: lightblue;
+}
+.carousel .carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+#offer{
+	color: orchid;
+	text-align: center;
+}
 
 /***Desktop***/
 @media (min-width: 992px) {
@@ -87,4 +113,8 @@ footer{
 	.col-sm-10 {width: 83.33%}
 	.col-sm-11 {width: 91.66%}
 	.col-sm-12 {width: 100%}
+
+	.carousel .carousel-inner{
+		height:auto
+ 	}
 }
