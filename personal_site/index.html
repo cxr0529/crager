@@ -1,62 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>My Portfolio Site</title>
-		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/styles.css">
-		
-		<script>
-			console.log("My portfolio website");
-		</script>
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Chuck Rager</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-	<body>
-		<header>
-			
-		</header>
-		<h1 id="welcome">Welcome to my portfolio page</h1><br><br>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-3 col-lg-3">
-					<section><img class="img-fluid" src="images/headshot.jpeg" alt="Headshot"></section>
-					<p class="text-center">Charles Rager<br>Freelance Frontend Web Designer</p>
-				</div><!-- end of column -->
-				<div class="col-sm-12 col-md-3 col-lg-4">
-					<section class="text-center"><u>Links to Sites I've worked on:</u></section><br>
-					<ul>
-						<li><a href="http://www.mussiggreenhouse.com" target="_blank">Mussig's Greenhouse</a></li>
-						<li><a href="http://www.harrisvillevfc.org" target="_blank">Harrisville VFC</a></li>
-					</ul>
-				</div><!-- end of column -->
-				<div class="col-sm-12 col-md-3 col-lg-4">
-					<section><u>Links to other sites:</u></section><br>
-					<ul>
-						<li><a href="https://www.linkedin.com/in/charles-rager-12b9652a6" target="_blank">LinkedIn</a></li>
-						<li><a href="http://www.github.com/cxr0529" target="_blank">GitHub</a></li>
-					</ul>
-				</div><!-- end of column -->
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<section>Contact Info:</section>
-					<p><a href="mailto:cxr0529@gmail.com">Email me to schedule a meeting</a></p>
-				</div><!-- end of column -->
-			</div><!-- end of row -->
-		</div><!-- end of container -->
-		
-		<footer>
-			<p id="copyright">© Copyright 2024 Charles Rager</p>
-		</footer>
-		
-		<!-- <script src="js/ajax-utils.js"></script> -->
-		<script src="js/jquery-3.7.1.min.js"></script>
-	  	<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/script.js"></script>
-		
-		<audio autoplay>
-			<source src="data/SummerRain.mp3" type="audio/mpeg">
-		</audio>
-	</body>
+    <h1 class="welcome" id="home">Welcome to My Portfolio</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="hero-section col-sm-12 col-md-4 col-lg-4">
+                <img class="img-fluid" src="images/headshot.jpeg" alt="Headshot">
+                <p>I am Chuck, a passionate software engineer focused on web app development.</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div><!-- end of intro -->
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>With a background in various fields, I am dedicated to developing cutting-edge web applications for anyone. My focus is on writing clean, efficient code. I am currently sharpening my skills in front-end development.</p>
+                </section>
+            </div><!-- end of about me -->
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <h4>design section for contact info</h4>
+                <section><u>Links to other sites:</u></section><br>
+                    <ul>
+                        <li><a href="mailto:cxr0529@gmail.com">Email me</a></li>
+                        <li><a href="https://www.linkedin.com/in/charles-rager-12b9652a6" target="_blank">LinkedIn</a></li>
+                        <li><a href="http://www.github.com/cxr0529" target="_blank">GitHub</a></li>
+                    </ul>
+            </div><!-- end of contacts -->
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <section id="skills" class="skills-section">
+                    <h2>Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill">
+                            <h3>HTML</h3>
+                            <div class="skill-bar" style="width: 90%;">90%</div>
+                        </div>
+                        <div class="skill">
+                            <h3>CSS</h3>
+                            <div class="skill-bar" style="width: 90%;">90%</div>
+                        </div>
+                        <div class="skill">
+                            <h3>Javascript</h3>
+                            <div class="skill-bar" style="width: 85%;">85%</div>
+                        </div>
+                        <div class="skill">
+                            <h3>React</h3>
+                            <div class="skill-bar" style="width: 80%;">80%</div>
+                        </div>
+                    </div>
+                </section>
+            </div><!-- end of skills -->
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h4>Design section for sites i've worked on</h4>
+                <section class="text-center"><u>Links to Sites I've worked on:</u></section><br>
+                    <ul>
+                        <li><a href="http://www.mussiggreenhouse.com" target="_blank">Mussig's Greenhouse</a></li>
+                        <li><a href="http://www.harrisvillevfc.org" target="_blank">Harrisville VFC</a></li>
+                    </ul>
+            </div><!-- end of sites -->
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <section id="projects" class="projects-section">
+                    <h2>Projects</h2>
+                    <div class="projects-grid">
+                        <a href="https://www.github.com/cxr0529/shopping-app" target="_blank">
+                            <div class="project-card">
+                                <img src="images/shopping-app.jpeg" alt="Shopping App">
+                                <h3>Shopping App Enhancement</h3>
+                                <p>Improved an existing shopping application.</p>
+                            </div>
+                        </a>
+                        <a href="https://www.github.com/cxr0529/react_budget_app" target="_blank">
+                            <div class="project-card">
+                                <img src="images/react_budget_app.jpg" alt="React Budget App">
+                                <h3>Budget App</h3>
+                                <p>Developed a budget app using React.</p>
+                            </div>
+                        </a>
+                        <a href="https://www.github.com/cxr0529/projects" target=_blank>
+                            <div class="project-card">
+                                <img src="images/projects.jpg" alt="Projects">
+                                <h3>Small Projects</h3>
+                                <p>Smaller projects that can be reused for bigger projects later.</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </div><!-- end of projects -->
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <section id="contact" class="contact-section">
+                    <h2>Contact Me</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                    <p id="formResponse"></p>
+                </section>
+            </div><!-- end of contact -->
+        </div><!-- end of row -->
+    </div><!-- end of container -->
+
+    <footer>
+        <p class="copyright">© Copyright 2024 Charles Rager</p>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <audio autoplay>
+        <source src="data/SummerRain.mp3" type="audio/mpeg">
+    </audio>
+</body>
 </html>
